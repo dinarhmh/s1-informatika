@@ -145,7 +145,7 @@ a:hover {
     max-width: 100%;
     border-radius: 10px;
     position: absolute;
-    top: -215px; /* Geser gambar ke atas dari kotak */
+    top: -230px; /* Geser gambar ke atas dari kotak */
     left: 50%;
     transform: translateX(-50%); /* Untuk memusatkan gambar */
 }
@@ -193,32 +193,46 @@ a:hover {
 }
 
 
-/* Untuk layar kecil */
-@media screen and (max-width: 414px) {
-    .container {
-        max-width: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    #brxe-znwdkv, #brxe-yoltuk {
+/* Responsif untuk layar kecil */
+@media screen and (max-width: 768px) {
+    #brxe-znwdkv {
         flex-direction: column;
         align-items: center;
+        padding: 20px;
+        margin: 0 15px;
+    }
+
+    #brxe-oyconz img {
+        top: -100px;
+        max-width: 80%;
+    }
+
+    #brxe-yoltuk {
+        padding-left: 0;
         text-align: center;
     }
 
-    #brxe-znwdkv img, #brxe-yoltuk img {
+    #brxe-vpbcqu {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    #brxe-znwdkv {
+        padding: 20px;
+    }
+
+    #brxe-oyconz img {
+        position: static;
+        transform: none;
+        margin-top: 10px;
         max-width: 100%;
         height: auto;
     }
 
-    .content {
-        padding: 1000px;
-        margin-top: 10px;
-    }
-
-    .header, .footer {
-        padding: 20px;
+    #brxe-yoltuk {
+        padding-left: 0;
         text-align: center;
     }
 
