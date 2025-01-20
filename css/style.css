@@ -1392,6 +1392,66 @@ a:hover {
 .footer .footer-item .footer-btn a:hover i {
     color: var(--bs-white);
 }
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    .footer {
+        height: auto; /* Tinggi otomatis untuk mengakomodasi isi */
+        font-size: 14px; /* Kurangi ukuran font */
+        padding: 20px 10px; /* Tambahkan padding */
+    }
+
+    .footer .footer-item {
+        align-items: left; /* Pusatkan elemen dalam footer-item */
+        text-align: left; /* Teks berada di tengah */
+    }
+
+    .footer .footer-item img {
+        width: 250px; /* Perkecil logo */
+        margin-bottom: 15px; /* Tambahkan jarak bawah */
+    }
+
+    .footer .footer-item a {
+        line-height: 25px; /* Kurangi tinggi baris */
+        font-size: 14px; /* Ukuran font lebih kecil */
+    }
+
+    .footer .footer-item p {
+        line-height: 25px; /* Kurangi tinggi baris untuk teks */
+        font-size: 13px; /* Ukuran font lebih kecil */
+        margin-bottom: 15px; /* Tambahkan jarak antar paragraf */
+    }
+
+    .footer .footer-item .footer-btn {
+        margin-top: 15px; /* Tambahkan jarak atas */
+    }
+
+    .footer .footer-item .footer-btn a {
+        margin: 5px; /* Jarak antar tombol */
+        padding: 8px 12px; /* Ukuran tombol lebih kecil */
+    }
+
+    .footer .footer-item .footer-instagram {
+        margin: 15px 0; /* Jarak antar elemen Instagram */
+    }
+
+    .footer .footer-item .footer-instagram img {
+        width: 100%; /* Atur gambar agar fleksibel */
+    }
+
+    .footer .footer-item .footer-instagram .footer-search-icon {
+        font-size: 20px; /* Sesuaikan ukuran ikon */
+    }
+
+    /* Sosial Media */
+    .footer .footer-item .btn-social {
+        width: 40px;
+        height: 40px;
+        margin: 5px auto; /* Pusatkan tombol */
+        font-size: 16px;
+    }
+}
+
 /*** Footer End ***/
 
 
