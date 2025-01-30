@@ -1,3 +1,93 @@
+.hero {
+    background: url('library-background.jpg') no-repeat center center/cover;
+    color: rgb(255, 255, 255);
+    padding: 30px 15px;
+    text-align: left;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3b66b6;
+}
+
+.hero:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    flex: 1; /* Take up remaining space but leave room for video */
+    max-width: 500px; /* Narrower width for the text */
+    margin-left: 110px;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    
+}
+
+.hero p {
+    font-size: 1em;
+    text-align: justify;
+    color: #e1e4e7;
+}
+
+.video-container {
+    text-align: center;
+    flex: 2; /* Video takes up more space */
+    margin: 20px 0;
+}
+
+.responsive-iframe {
+    width: 70%; /* Video selalu responsif */
+    height: auto; /* Tinggi otomatis berdasarkan lebar */
+    aspect-ratio: 16/9; /* Menjaga rasio aspek video */
+}
+
+.video-container iframe {
+    z-index: 10;
+    pointer-events: auto;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column; /* Ubah tata letak menjadi kolom */
+        padding: 20px; /* Sesuaikan padding untuk tampilan mobile */
+    }
+
+    .hero-content {
+        padding: 20px; /* Opsional: Menambahkan padding untuk jarak dalam */
+        text-align: center; /* Teks rata tengah untuk estetika */
+        margin: 0 auto; /* Tengah untuk video */
+        width: 100%; /* Lebar penuh untuk video */
+        max-width: 100%; /* Tidak ada batasan lebar */
+    }
+
+    .video-container {
+        margin: 0 auto; /* Tengah untuk video */
+        width: 100%; /* Lebar penuh untuk video */
+        max-width: 100%; /* Tidak ada batasan lebar */
+    }
+
+    .responsive-iframe {
+        width: 100%; /* Responsif terhadap layar kecil */
+    }
+}
+
+
+
+
+
+
+
 /* Container styling */
 .servicee-container {
     display: flex;
@@ -502,8 +592,9 @@ a:hover {
 
 
 
-
-
+body {
+    font-family: 'Helvetica', sans-serif;
+}
 
 /*** Spinner Start ***/
 #spinner {
@@ -770,6 +861,7 @@ a:hover {
 /*** Carousel Hero Header Start ***/
 .header-carousel .header-carousel-item {
     height: 700px;
+    font-family: 'Poppins', sans-serif;
 }
 
 /**.header-carousel .owl-nav .owl-prev,
@@ -815,6 +907,7 @@ a:hover {
     background: rgba(0, 0, 0, .2);
     display: flex;
     align-items: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 @media (max-width: 991px) {
@@ -1089,6 +1182,7 @@ a:hover {
 .blog .blog-item {
     border-radius: 10px;
     transition: 0.5s;
+    font-family: 'Poppins', sans-serif;
 }
 
 .blog .blog-item:hover {
